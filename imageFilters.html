@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Image Processing</title>			
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body><header><h1>How Camcorders Work (Sony HDR CX240 Full HD Camcorder)</h1></header>		
+		<div class="image" >	
+			<canvas id="canvas"></canvas>
+			
+		    <div class="options" id="options"><h2>General Image Effects</h2>
+				<form>Select image effect:
+					<select id="mySelect"></select>
+				</form>				
+				<p><button id="reset">Reset</button></p>
+				<p>Image processing algorithms: </p>
+				<pre id="formula" style="padding-left: 20px "></pre>
+				<p>&nbsp;</p><br>
+				<p> Hue Effect
+				<input id="hueAngle" type="range" min="0" max="360" value = "0"><br>
+				</p>
+				
+				<form>Highlight Effects
+					<select id="highlight" onchange="" style="height: 30px;" >				
+					<option value=""> Normal</option>
+					<option value="Grayscale">Grayscale</option>
+					<input id="Size" type="range" min="0" max="100" value="0"><br>
+					</select>
+				</form>				
+				 <p><button  class= "reset1" onclick="myFunction()"> Reset All </button></p>
+				<script>
+					function myFunction() {
+						location.reload();
+					}
+				</script>	
+			</div>
+		</div>
+		
+		<div class = "info" id = "info">
+			<h2> Information About Hardware</h2>
+			<h4> Click on the image to find out more information about hardware</h4>
+			<p id = "textInfo" onclick="onClick()" ></p>
+            <h2>How Camcorders Work</h2>
+			<p>A Camcorder works in a similar way to a digital camera or webcam. Information is recorded digitally as bytes. The digital format allows reproduction of images/videos without losing audio or image/video quality. The information recorded by the digital camcorder/cameras can also be downloaded to a computer for further manipulation, sent by email, or posted on the web.</p>	
+			<p>Like an analog camcorder, the digital camcorder uses a lens to see the scene it records. Instead of storing photographic images, the digital camcorder uses a light sensitive microchip CCD (charge-couple device) to convert the light sent by the lens into digital format.</p>	
+			<p>The CCD measures the amount of light and the level of each primary colour of light(RGB) that hits each particular point on the scene and converts the information into binary data.</p>	
+			<p>The lens of the camcorder can be manually adjusted in and out to focus light when taking a picture, but this does not work well when recording videos, as the objects on the scene may move. </p>
+			<p>For these reasons, all camcorders come with an autofocus device, typically an infrared beam that bounces off the scene object and returns. The camcorder processor calculates the information and a small motor moves the lens to focus.</p>	
+		</div>
+		<script type = "text/javascript" src="functions.js"></script>
+	</body>
+</html>

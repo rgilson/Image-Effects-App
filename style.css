@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #d6ff99;
+	font-family: "Verdana";
+	}
+header {
+	padding: 1em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: center; 
+	}
+
+.image {	
+	display: inline-block;
+	margin: auto;
+	border: 3px solid ;
+	width:100%;
+	padding: 1em;
+	clear: left;
+	}
+
+.options{
+	float: left;
+	width:40%;			
+	padding: 1em;
+	clear: left;
+	}
+	
+.canvas {		  
+	display: inline-block;
+	position:fixed;
+	border: 3px solid #73AD21;
+	padding: 1em;
+	overflow: hidden;
+	background-color: #6bb300;
+	max-width:60%;
+	}	
+.info {
+	display: inline-block;
+	padding: 1em;
+	border: 3px solid #73AD21;
+	width:100%;
+	}
+h4 { font-style: italic; color:#930 ;}	
